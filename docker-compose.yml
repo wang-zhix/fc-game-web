@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  my_service:
+    image: zhixwang/fc-game-web:latest
+    container_name: fc-game-web
+    ports:
+      - "2063:80"
+    volumes:
+      - /data/fc-game-web/roms:/fc-game-web/roms
+    restart: always
